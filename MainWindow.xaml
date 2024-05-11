@@ -1,0 +1,22 @@
+﻿<Window x:Class="Client.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="554" Width="821">
+    <Grid>
+        <ScrollViewer HorizontalAlignment="Center" Height="335" Margin="0,10,0,0" VerticalAlignment="Top" Width="822">
+            <TextBox x:Name="ChatText" Height="330" TextWrapping="Wrap" Text="Для начала чата введите имя и нажмите Присоединиться к чату" Width="794" FontSize="18" IsEnabled="False"/>
+        </ScrollViewer>
+        <TextBox x:Name="NameBox" HorizontalAlignment="Left" Height="38" Margin="73,388,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="276" FontSize="18" TextChanged="NameBox_TextChanged"/>
+        <Label Content="Имя" HorizontalAlignment="Left" Height="38" Margin="10,388,0,0" VerticalAlignment="Top" Width="58" FontSize="18"/>
+        <Button x:Name="NameOk" Content="Присоединиться к чату" HorizontalAlignment="Left" Height="38" Margin="354,388,0,0" VerticalAlignment="Top" Width="203" FontSize="18" IsEnabled="False" Click="NameOk_Click"/>
+        <Label Content="Сообщение" HorizontalAlignment="Left" Height="47" Margin="10,454,0,0" VerticalAlignment="Top" Width="112" FontSize="18"/>
+        <TextBox x:Name="MessageText" HorizontalAlignment="Left" Height="47" Margin="127,454,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="563" FontSize="18" TextChanged="MessageText_TextChanged"/>
+        <Button x:Name="SendMessage" Content="Отправить" HorizontalAlignment="Left" Height="47" Margin="695,454,0,0" VerticalAlignment="Top" Width="95" FontSize="18" IsEnabled="False" Click="SendMessage_Click"/>
+        <Button x:Name="ExitButton" Content="Выйти" HorizontalAlignment="Left" Height="38" Margin="600,388,0,0" VerticalAlignment="Top" Width="142" FontSize="18" Click="ExitButton_Click"/>
+
+    </Grid>
+</Window>
